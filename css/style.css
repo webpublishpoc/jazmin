@@ -6,17 +6,17 @@
 
 /* --- CSS Custom Properties --- */
 :root {
-  --color-primary:       #648268;
-  --color-primary-light: #89A88D;
-  --color-primary-dark:  #425E46;
-  --color-secondary:     #EADCA6;
-  --color-secondary-light: #FDF4D2;
-  --color-bg:            #FAFCFA;
+  --color-primary:       #E098A5;
+  --color-primary-light: #F4C4CD;
+  --color-primary-dark:  #BF7381;
+  --color-secondary:     #F9E8EB;
+  --color-secondary-light: #FDF5F6;
+  --color-bg:            #FFFFFF;
   --color-surface:       #FFFFFF;
-  --color-text:          #1A241C;
-  --color-text-muted:    #556B59;
-  --color-accent:        #D6B95C;
-  --color-border:        #E2E8E3;
+  --color-text:          #4A3B3D;
+  --color-text-muted:    #826F72;
+  --color-accent:        #D48D9A;
+  --color-border:        #F0E4E6;
 
   --font-heading: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'Nunito Sans', system-ui, sans-serif;
@@ -70,7 +70,7 @@ p:last-child { margin-bottom: 0; }
 /* --- Layout --- */
 .container { width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 var(--space-lg); }
 .section    { padding: var(--space-3xl) 0; }
-.section--alt { background-color: rgba(100,130,104,0.08); }
+.section--alt { background-color: rgba(224,152,165,0.08); }
 
 /* --- Animations --- */
 @keyframes fadeUp {
@@ -102,7 +102,7 @@ p:last-child { margin-bottom: 0; }
   transition: background var(--transition-base), box-shadow var(--transition-base);
 }
 .nav--scrolled {
-  background: rgba(250,252,250,0.92);
+  background: rgba(255,255,255,0.92);
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
   box-shadow: var(--shadow-sm);
 }
@@ -143,7 +143,7 @@ p:last-child { margin-bottom: 0; }
 /* Mobile drawer */
 .nav__mobile {
   display: none; position: fixed; top: var(--nav-height); left: 0; right: 0;
-  background: rgba(250,252,250,0.97); backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.97); backdrop-filter: blur(12px);
   padding: var(--space-xl); box-shadow: var(--shadow-md);
   flex-direction: column; gap: var(--space-lg);
   transform: translateY(-8px); opacity: 0; pointer-events: none;
@@ -164,7 +164,7 @@ p:last-child { margin-bottom: 0; }
 }
 .hero::before {
   content: ''; position: absolute; inset: 0;
-  background: linear-gradient(135deg, rgba(250,252,250,0.91) 0%, rgba(250,252,250,0.65) 55%, rgba(100,130,104,0.08) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,0.91) 0%, rgba(255,255,255,0.65) 55%, rgba(224,152,165,0.15) 100%);
 }
 .hero__content { position: relative; z-index: 1; max-width: 600px; }
 .hero__eyebrow {
@@ -253,7 +253,7 @@ p:last-child { margin-bottom: 0; }
 .page-hero {
   padding-top: calc(var(--nav-height) + var(--space-3xl));
   padding-bottom: var(--space-2xl);
-  background: linear-gradient(150deg, var(--color-bg) 0%, rgba(100,130,104,0.12) 100%);
+  background: linear-gradient(150deg, var(--color-bg) 0%, rgba(224,152,165,0.12) 100%);
   text-align: center;
 }
 .page-hero h1 { margin-bottom: var(--space-md); }
@@ -292,7 +292,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--color-text); background: var(--color-bg); outline: none;
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
-.form-input:focus, .form-select:focus, .form-textarea:focus { border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(100,130,104,0.12); }
+.form-input:focus, .form-select:focus, .form-textarea:focus { border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(224,152,165,0.12); }
 .form-textarea { min-height: 140px; resize: vertical; }
 .contact-info { display: flex; flex-direction: column; gap: var(--space-md); }
 .contact-info-item { display: flex; gap: var(--space-md); align-items: flex-start; padding: var(--space-lg); background: var(--color-surface); border-radius: var(--radius-md); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); }
